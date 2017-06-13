@@ -5,12 +5,11 @@ This program will calculate absorption coefficients via the Beer-Lambert law fro
 
 
 ### Installation
-The first step will be to download this code onto your computer. You can do this by pasting the following into your terminal:
+The first step will be to download this code onto your computer. If you have git install on your machine you can do this by pasting the following into your terminal:
 
 `git clone https://github.com/NauIceLab/SpectralAnalysis.git`
 
-
-This will include all of the necessary files to perform a test case to understand how the program operates step by step. 
+Otherwise you can download it as a zip file by clicking the green button above that says `clone or download`. The directory that is downloaded will include the python code as well as all of the necessary files to perform a test case to understand how the program operates step by step. 
 
 
 ### Running the code
