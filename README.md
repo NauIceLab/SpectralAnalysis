@@ -5,17 +5,25 @@ This program will calculate absorption coefficients via the Beer-Lambert law fro
 
 
 ### Installation
-The first step will be to download this code onto your computer. If you have git installed on your machine you can do this by pasting the following into your terminal:
+The first step will be to download this code onto your computer. You can do this by pasting the following into your terminal:
 
 `git clone https://github.com/NauIceLab/SpectralAnalysis.git`
 
-Otherwise you can download it as a zip file by clicking the green button above that says `clone or download`. The directory that is downloaded will include the python code as well as all of the necessary files to perform a test case to understand how the program operates step by step. 
+This will include all of the necessary files to perform a test case to understand how the program operates step by step. 
 
+### Operating Systems and Dependencies
+
+The following table shows the operating systems and dependencies that have been tested and can run this code. Make sure to have the correct versions installed before proceeding. Be sure to note wheter your system uses Python 2.7.x or Python 3.x when installing each dependency. 
+
+|Operating System | Python Version | Numpy | Scipy | Matplotlib | Tkinter|
+|---|---|---|---|---|---|
+|MacOS Sierra|  2.7.13 and 3.6.2| 1.13.0 and 1.13.1 | 0.19.0 and 0.19.1 | 2.0.2 | 8.5 |
+|Fedora 26|  2.7.13 and 3.6.2| 1.12.1 and 1.13.1 | 0.19.1 | 2.0.0 and 2.0.2 | 8.6 |
 
 ### Running the code
 Included are two CSV files with example data. RawBackground.csv and RawData.csv are spectra collected of an empty cell chamber and pure methane (CH4) liquid. These spectra were taken at 92 Kelvin. 
 
-1. First, you will run the code via the terminal with: `python GTanalysis.py`. This will start the program. The program will ask you for a directory name, this will be where all of the work will be stored. Various plots, csv files, and txt files will be generated during the program and saved into this directory. 
+1. First, you will run the code via the terminal with: `python GTanalysis.py`. NOTE: this code has been recently updated to run as python3 code (tested up to version 3.6.2). If you wish to run this code on python2, use the `GTanalysis2.py` file that has been included. After running `python GTanalysis.py`, this will start the program. The program will ask you for a directory name, where all of the work will be stored. Various plots, csv files, and txt files will be generated during the program and saved into this directory. 
 
 
 ![first gif](https://github.com/Gleland/SpectralAnalysis/blob/master/images/part1.gif) 
@@ -77,18 +85,18 @@ Included are two CSV files with example data. RawBackground.csv and RawData.csv 
 6. __alpha_coeffs.pdf__: screenshot of the absorption coefficients taken during program execution for later reference
 7. __continuum_chosen.pdf__: screenshot of the continuum chosen during program execution for later reference
 8. __continuum_polynomial.txt__: The continuum polynomial is saved for future use if someone wants to plot the curve again
-9. __dv_filt_specturm.pdf__: The spectrum after it has been filtered and a background divide (raw/background) has been performed
+9. __dv_filt_spectrum.pdf__: The spectrum after it has been filtered and a background divide (raw/background) has been performed
 10. __continuum_polynomial.txt__: The continuum polynomial is saved for future use if someone wants to plot the curve again
 11. __dv_filt_specturm.pdf__: The spectrum after it has been filtered and a background divide (raw/background) has been performed
 12. __continuum_polynomial.txt__: The continuum polynomial is saved for future use if someone wants to plot the curve again
-13. __dv_filt_specturm.pdf__: The spectrum after it has been filtered and a background divide (raw/background) has been performed
+13. __dv_filt_spectrum.pdf__: The spectrum after it has been filtered and a background divide (raw/background) has been performed
 14. __fft_data.csv__: the raw data after the FFT filter has been applied for future reference if needed
 15. __FFT_filter.pdf__: A screenshot of the filter window chosen during program execution
 16. __freq_window.csv__: a csv file of the values picked for the FFT filter
 17. __FFT_Raw_bg_data.csv__: same as above, but for the background data
 18. __fft_background.pdf__: a screenshot of the FFT performed on the background data during program execution
 19. __rawbackground.pdf__: __a screenshot of the raw background data being plotted at the beginning of the program for future reference
-20. __rawspecturm.pdf__: same as above but for the raw data.
+20. __rawspectrum.pdf__: same as above but for the raw data.
 21. __temperature.txt__: a txt file with the user's input of the temperature of the sample
 22. __concentration.txt__: a txt file with the user's input of the concentration of the sample
 23. __data_files_used.txt__: a txt file with the user's input of the data files used during program execution
